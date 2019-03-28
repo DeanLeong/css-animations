@@ -1,0 +1,36 @@
+* {
+ box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-color: #F95758;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans', sans-serif;
+  padding: 12.8px;
+  padding: .8rem;
+  margin-bottom: 200px;
+}
+
+h1 {
+  font-family: 'Bitter', serif;
+  font-weight: normal;
+}
+
+h2, h3 {
+  font-weight: 600;
+}
+
+section {
+  margin-bottom: 5rem;
+}
+
+
+/* YOUR CODE HERE */
+
+/* Use a transform to animate the first bug on hover */
+
+/* Use a transform to animate the second bug on hover */
+
+/* Use TWO transforms to animate the third bug on hover */
