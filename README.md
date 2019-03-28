@@ -215,7 +215,7 @@ The key is to add it to `div` and not `div:hover`. That might seem counterintuit
 2. The user hovers on `<div>`.
 3. `div:hover{}` styles are applied.
 
- We can't put `transition` on `div:hover` because, when those styles are applied, the hover has *already happened*. We put the animation styles in the non-hover state of the object to *prepare* for a hover. Here is the complete CSS for the `div`:
+We can't put `transition` on `div:hover` because, when those styles are applied, the hover has *already happened*. We put the animation styles in the non-hover state of the object to *prepare* for a hover. Here is the complete CSS for the `div`:
 
   ```css
   div {
@@ -235,11 +235,12 @@ The key is to add it to `div` and not `div:hover`. That might seem counterintuit
   ```
 
 In the declaration `transition: all 2s ease-in-out;` we have the following values:
+
 - `all` means we want a transition applied to all shared properties of `div{ }` and `div:hover{ }`.
 - `2s` is the total time, in seconds, it takes for the animation to occur (this can be a decimal).
 - `ease-in-out` is the animation style – this means the transition will happen when the user hovers on the `div` and hovers away from the `div`.
 
-Feel free to explore the code on your own [here](transition-example).
+Feel free to explore the code on your own [here](codealong/transition-example).
 
 
 ### 💥 Independent Practice -- Triggering Transitions (10 min)
@@ -248,13 +249,15 @@ Feel free to explore the code on your own [here](transition-example).
 
 ## Animations
 
-With animations, you determine as many states as you want (the beginning, the end and the in-between) - the computer still tweens between those steps. Rather than using a pseudo-selector, animations have a partner rule called @keyframes
+With animations, you determine as many states as you want (the beginning, the end and the in-between) - the computer still tweens between those steps. Rather than using a pseudo-selector, animations have a partner rule called `@keyframes`.
 
 Animations happen on page load. The number of iterations can be determined.
 
-If you want an animation to start based on some activity (e.g. the click of a button), you can, with JavaScript. On a click (or whatever the event listener is placed upon) - add the class of the element. To stop or switch animations, remove the class and put on a new one.
+If you want an animation to start based on some activity (e.g. the click of a button), you can with JavaScript. On a click (or whatever the event listener is placed upon) – add the class of the element. To stop or switch animations, remove the class and put on a new one.
 
 #### What is a keyframe?
+
+![diagram](assets/keyframes.jpg)
 
 Keyframes are a common animation concept, usually found in hand-drawn animation. In the above image, the figures in grey are keyframes - they define the starting, ending, or middle point of a smooth transition. The other drawings are inbetweens - they don't have to be drawn on a storyboard, because the animator can assume what they will look like without a visual reference.
 
@@ -284,7 +287,7 @@ Keyframe syntax uses `@`. Let's take a look at the bare bones of a keyframe rule
   }
   /* In order for anmiations to happen smoothly, you must
      animate the same property at every animation !! 
-     For ex, to smoothly animate a circle from left to right,
+     For example, to smoothly animate a circle from left to right,
      you wouldn't do `left: 0%;` and then `right: 0%;`. You have
      to keep animating `left`. */
 }
@@ -326,9 +329,12 @@ Let's animate this drawing together. This example has been pseudo-coded because 
 - Make the animation happen! 
 
 Steps to write pseudo code:
+
 1. What actions are we waiting for the user to take? (click, scroll, submit, keydown, etc.)?
 2. Is there css we can add to our stylesheet and then add or remove a class?
 3. Do we need any logic (if / else statements)?
+
+---
 
 ### 💥 Independent Practice -- Modal Window
 1. Open the `starter code > modal_window` in your text editor.
@@ -340,7 +346,7 @@ Steps to write pseudo code:
 1. Open the `starter code > sidebar_menu` in your text editor.
 2. Turn and Talk: Chat through how to tackle this interaction with a partner
 3. Follow the instructions in `main.css` to make the menu interactive. One step will require writing JS
-4. BONUS: Also move the .content section over when the hamburger icon is clicked.
+4. BONUS: Also move the `.content` section over when the hamburger icon is clicked.
 
 ### 💥 Independent Practice -- Sticky Nav
 1. Open the `starter code > sticky_nav` in your text editor.
@@ -351,7 +357,7 @@ Steps to write pseudo code:
 
 ***
 
-### Independent Practice: Research Transforms, Transitions, and Animations (20 mins)
+### 💥 Independent Practice: Research Transforms, Transitions, and Animations (20 mins)
 Break into groups of four. Each group will have 20 minutes to prepare a short explanation/demo of their assigned topic. Your demos should take no longer than five minutes.
 
 | Group | Topic
@@ -365,7 +371,7 @@ Break into groups of four. Each group will have 20 minutes to prepare a short ex
 ***
 
 <a name="ind-practice"></a>
-### Independent Practice: Animate It! 
+### 💥 Independent Practice: Animate It! 
 Implement as many of the following exercises as you can in the time allotted. Feel free to work with a partner!
 
 - [Loader Animation](independent-practice/loader-animation/starter-code)
@@ -376,7 +382,7 @@ Implement as many of the following exercises as you can in the time allotted. Fe
 - [CSS Accordion](independent-practice/accordian-animation)
 - [Clock](independent-practice/clock-animation)
 
-### Independent Practice: Choose Your Own Adventure
+### 💥 Independent Practice: Choose Your Own Adventure
 You can work on your own, in pairs, or in groups of three. Here are your options:
 
 - Add another planet or two to the solar system we've been building!!
