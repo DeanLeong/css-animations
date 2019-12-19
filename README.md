@@ -147,15 +147,18 @@ yourSelectorHere {
 
 ```css
 .box-1 {
-  transition-property: background-color;
-  transition-duration: 3s;
-  transition-delay: 1s;
-  background-color: red;
-}
-
-.box-1:hover {
-  background-color: white;
-}
+    margin: 50px auto;
+    height: 150px;
+    width: 150px;
+    transition-property: background-color;
+    transition-duration: 3s;
+    transition-delay: 1s;
+    background-color: red;
+  }
+  
+  .box-1:hover {
+    background-color: blueviolet;
+  }
 ```
 There are two ways to trigger CSS transitions:
 
