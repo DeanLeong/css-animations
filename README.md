@@ -36,7 +36,7 @@ Today we'll cover three major topics, each somewhat related:
 Transforms are static - immediately changing the targeted element and causing it to stay that way. The syntax for the transform property is simple – the transform property followed by the value:
 
 ```
-button {
+div {
 	transform: scale(1.5)
 }
 ```
