@@ -136,6 +136,27 @@ yourSelectorHere {
 	transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
 }
 ```
+### Another way to write this is:
+
+###### HTML
+
+```
+<div class="box-1">Box 1</div>
+```
+###### CSS
+
+```css
+.box-1 {
+  transition-property: background-color;
+  transition-duration: 3s;
+  transition-delay: 1s;
+  background-color: red;
+}
+
+.box-1:hover {
+  background-color: white;
+}
+```
 There are two ways to trigger CSS transitions:
 
 - Using the `:hover` CSS pseudo-class
@@ -218,7 +239,7 @@ The key is to add it to `div` and not `div:hover`. That might seem counterintuit
 We can't put `transition` on `div:hover` because, when those styles are applied, the hover has *already happened*. We put the animation styles in the non-hover state of the object to *prepare* for a hover. Here is the complete CSS for the `div`:
 
   ```css
-  div {
+  .box-1 {
     border: none;
     outline: none;
     background-color: #F78FA7;
@@ -228,7 +249,7 @@ We can't put `transition` on `div:hover` because, when those styles are applied,
     transition: all 2s ease-in-out;
   }
 
-  div:hover {
+.box-1:hover {
     background-color: yellow;
     margin-left: 100px;
   }
