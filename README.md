@@ -194,11 +194,11 @@ Look over the following HTML and CSS, which renders as shown in the mockup below
 
 ```html
 <body>
-  <div class="party">
-    <p>Party div!!!</p>
-    <img src="images/giphy.gif">
-  </div>
-</body>
+    <div class="party">
+      <p>Party div!!!</p>
+      <img src="<Your Image URL>">
+    </div>
+  </body>
 ```
 
 ```css
