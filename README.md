@@ -289,7 +289,7 @@ In web-based animations, keyframes work the same way - they represent the begini
 
 The `transition` property allows us to define a beginning and end point for a state change. However, sometimes you'll want to have an element move through multiple states during an animation. That's where the CSS keyframes rule comes in.
 
-Keyframe syntax uses `@`. Let's take a look at the bare bones of a keyframe rule:
+Keyframe syntax uses `@`[At-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule). Let's take a look at the bare bones of a keyframe rule:
 
 ```
 /* keyframes keyword, animation name */
