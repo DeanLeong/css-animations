@@ -2,8 +2,6 @@
 
 
 ### LEARNING OBJECTIVES
-- Utilize browser compatibility techniques such as vendor prefixes, the SHIV, and meta tags.
-- Describe the importance of prefixing CSS properties.
 - Use properties such as transition and transform to change element properties.
 - List the types of properties that can/can't be animated.
 - Describe the purpose and syntax of css keyframes.
